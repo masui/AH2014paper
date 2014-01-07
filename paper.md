@@ -11,7 +11,7 @@ most of the systems.
 Using the BABAScript system, all the computer activities and
 human activities can be described in a powerful and simple
 programming language, and
-All the intelligent entities in the real world connected to the Internet
+all the intelligent entities in the real world connected to the Internet
 can be programmed in a consistent way.
 
 <!--
@@ -25,7 +25,7 @@ can be programmed in a consistent way.
 
 Computer programs have long been widely used for
 controling the behaviors of machines, but
-human activities have not been described in a
+human activities have not been described in the same
 programming language style.
 Although all the computers and devices in the whole world
 are now going to be connected to the Internet and
