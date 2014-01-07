@@ -6,7 +6,7 @@ We introduce the "BabaScript" programming system which supports
 the integration of human and computer activities.
 Although many recent programming systems support croudsourcing features
 where computer programs can utilize human resources,
-computer resources and human resources are not full integrated in
+computer resources and human resources are not fully integrated in
 most of the systems.
 Using the BABAScript system, all the computer activities and
 human activities can be described in a powerful and simple
@@ -24,47 +24,49 @@ can be programmed in a consistent way.
 ## Introduction
 
 Computer programs have long been widely used for
-controling the behaviors of machines,
+controling the behaviors of machines, but
 human activities have not been described in a
 programming language style.
-Although almost all the computers and devices in the whole world
-are now connected on the Internet and
+Although all the computers and devices in the whole world
+are now going to be connected to the Internet and
 controlled by a variety of software written in
 various programming languages,
-human behaviors and human tasks are not usually
-described in programming languages, in spite of the fact that
-human task descriptions are in many cases described in
-program-like manners.
-For example, cooking recipes are very similar
-to programming languages, since they describe
-what people should do for preparing foods.
+human behaviors and human tasks have not been
+described in programming language styles, despite the fact that
+human task descriptions are often described in similar styles.
+For example, cooking recipes resemble programming languages
+because they describe the order of tasks which 
+people should follow for preparing foods.
 
-	boil(a pan of water)
-	if(water is hot enough){
-	   put pasta into boild water
-	}
+For example, a recipe for pasta should look like this:
+
+	boil (a pan of water)
+	put (some salt)
+	wait (until water is hot enough)
+	put (pasta into boild water)
+	wait (10 minutes)
 	
 Job instructions can also be described in
-program-like texts.
+program-like manner.
 
 	while many people are waiting do
-	  open all the レジ counters
+	  open all the registration counters
 	end
 
 The structure of these instructions are
-similar to computer programming languages, but
+similar to programming languages, but
 computer languages and instructions for humans have been
-used in very different environments, and they were
+used in different environments, and they were
 not used together in the same environment.
 
 However, the two different language environments
-are getting closer, because "crowdsoursing" has been
-getting popular recently.
-Researchers are working on various reasearches where
+are getting closer these days, because "crowdsoursing" has been
+getting popular.
+Many people are working on various research topics where
 people can use human resources on the Web
-as easily as using software libraries in a system.
+as easily as using software libraries in computing systems.
 For example,
-users of a word processor can easily use a croudsoursing
+users of a new word processor can use a croudsoursing
 menu to ask people on the net to rewrite phrases,
 just like
 running a spell checker on the word processor[Miller].
@@ -78,14 +80,13 @@ computer resources and human resources are diminishing.
 However, there still exist big differences between
 computer functions and human functions, and
 these systems are not flexible enough.
-<!-- 対等でない -->
-A computer program can get a real-world sensing data on the net
+A computer program can get real-world sensing data on the net
 using a sensor library,
 but it cannot get similar data from people on the net,
 since the method of getting data from sensors and
 getting information from people are usually very different.
 Similarly,
-calling a software function and
+calling a system function and
 asking people to do something are quite different.
 If we can handle computer systems and people on the net
 exactly the same way,
@@ -94,44 +95,45 @@ exactly the same way,
 People might like to have a laundry-taking system which can
 execute a task like this:
 
-    if it's likely to rain then
-      take in the laundry
+    while true do
+      if it's likely to rain then
+        take in the laundry
+      end
     end
 
 We can use sensor devices or consult the Web to tell if
 "it's likely to rain",
-but we can also ask people if if it is likely to rain or not.
+but we can also ask people if it is likely to rain or not.
 Also, we can use a special robot to take in the laundry,
-while we can ask your family member to do the same thing.
+while we can ask our family member to do the same thing.
 In this way, 
 either a machine or a human can sense data or perform action
 in almost the same way.
 
-Even household chores can be described using
+Even household chores can be specified using
 program-like descriptions.
-If you have to prepare a Japanese dinnaer at 19:00, 
+If you have to prepare dinnaer at 19:00, 
 you may have to behave like this:
 
 - wash rice at 18:00
-- put the rice in a pot with proper amount of water
+- put the rice into a pot with proper amount of water
 - wait for 30 minutes
 - put the pot on the gas stove with high flame
 - set the heat low after hearing the boiling sound
 - turn of the gas after 10 minites
 
-Sensing the boiling sound is easy for humans, but simple sensors
-cannot detect it.
+Sensing the boiling sound is easy for humans, while simple 
+sensing devices cannot detect whether the pot is heated enough.
 Waiting for 10 minites is easy for computers, but that is
-not easy for humans.
+not easy for humans without using clocks.
 For a very simple task like preparing rice,
-collabolation between humans and computers is quite effective.
+collabolation between humans and computers is essential.
 <!-- センシングは人間がやる -->
 
 While the user is waiting for the rice to be cooked,
 he can do other tasks for the meal.
 Such activities can be described using a programming language
 which supports parallel processing.
-
 
 
 <!--
@@ -145,7 +147,7 @@ which supports parallel processing.
 	if 綺麗な景色を見たら then とか
   人間のセンシング行動やアクションも含めて完全に融合したプログラミング環境があれば面白い!
   -->
-  
+<!--  
  [[[例]]]
   [[[日常的な仕事の記述]]]
    [[[条件やアクションが人間でも機械でも同等]]]
@@ -189,5 +191,6 @@ which supports parallel processing.
   
   綺麗な景色だと写真をとる
    みたいなことは人間にしかできない
+   -->
   
   
