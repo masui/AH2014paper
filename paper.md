@@ -5,7 +5,7 @@
 We introduce the "BabaScript" programming system that supports
 the integration of human and computer activities.
 Although many recent programming systems support croudsourcing features
-where computer programs can utilize human resources,
+where computer programs can utilize human resources in the whole world,
 computer resources and human resources are not fully integrated in
 most of the systems.
 Using the BABAScript system, all the computer activities and
@@ -38,16 +38,21 @@ For example, cooking recipes resemble programming languages
 because they describe the order of tasks which 
 people should follow for preparing foods.
 
-For example, a recipe for pasta should look like this:
+For example, a recipe for preparing pasta should look like this:
 
 	boil (a pan of water)
 	put (some salt)
 	wait (until water is hot enough)
 	put (pasta into boild water)
 	wait (10 minutes)
+
+Here, a condition statment and a sleep statement is used
+in the recipe, just like they are found in common program texts.
 	
 Job instructions can also be described in
 program-like manner.
+In a conference registration counter, people may be instructed
+to work like this:
 
 	while many people are waiting do
 	  open all the registration counters
@@ -56,10 +61,10 @@ program-like manner.
 The structure of these instructions are
 similar to programming languages, but
 computer languages and instructions for humans have been
-used in different environments, and they were
-not used together in the same environment.
+used in different situations and environments, and they were
+not treated as the same thing.
 
-However, the two different language environments
+However, the two environments
 are getting closer these days, because "crowdsoursing" has been
 getting popular.
 Many people are working on various research topics where
@@ -71,7 +76,7 @@ menu to ask people on the net to rewrite phrases,
 just like
 running a spell checker on the word processor[Miller].
 In this case, there's little difference between
-calling a spell checking library and asking people on the
+calling a spell checker and asking people on the
 Net to rewite sentences.
 
 These approaches are interesting because
@@ -104,13 +109,15 @@ execute a task like this:
 We can use sensor devices or consult the Web to tell if
 "it's likely to rain",
 but we can also ask people if it is likely to rain or not.
-Also, we can use a special robot to take in the laundry,
-while we can ask our family member to do the same thing.
+We can use a special robot arm to take in the laundry,
+while it would be easier to ask the family member to do the same thing.
 In this way, 
 either a machine or a human can sense data or perform action
-in almost the same way.
+in almost the same way, and
+in some cases machines can do the job better than humens,
+and in other cases humans are better at the job.
 
-Even household chores can be specified using
+Simple household chores can be specified using
 program-like descriptions.
 If you have to prepare dinnaer at 19:00, 
 you may have to behave like this:
