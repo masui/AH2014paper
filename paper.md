@@ -23,20 +23,18 @@ can be programmed in a consistent way.
  
 ## Introduction
 
-<!-- 言いたいことはパラグラフの最初に書くこと -->
-
 Computer programs have long been widely used for
-controling the behaviors of machines.
-All the computers and devices in the whole world
+controling the behaviors of machines,
+human activities have not been described in a
+programming language style.
+Although almost all the computers and devices in the whole world
 are now connected on the Internet and
 controlled by a variety of software written in
-various programming languages.
-
-On the other hand,
+various programming languages,
 human behaviors and human tasks are not usually
-described in programming languages, although
-human task descriptions are in many cases described
-in program-like languages.
+described in programming languages, in spite of the fact that
+human task descriptions are in many cases described in
+program-like manners.
 For example, cooking recipes are very similar
 to programming languages, since they describe
 what people should do for preparing foods.
