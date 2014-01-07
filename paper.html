@@ -1,0 +1,353 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>AH2014 Paper</title>
+
+</head>
+<body>
+<h1>AH2014 Paper</h1>
+
+<h2>Abstract</h2>
+
+<p>We introduce the "BabaScript" system which can handle
+software and humans in the same programming environment.</p>
+
+<p>人間をシステムの一部として扱える[[クラウドソーシング]]シス テムが最近流行している
+ しかし人間をセンサとして利用できないなど、完全に対等になっていない
+ 人間と機械を完全に同等に扱えるスクリプト言語[[BABAScript]]を提案する
+ [[BABAScript]]でいろんな面白いことが可能になる</p>
+
+<h2>Introduction</h2>
+
+<!-- 言いたいことはパラグラフの最初に書くこと -->
+
+
+<p>Computer programs have long been widely used for
+controling the behaviors of machines.
+All the computers and devices in the whole world
+are now connected on the Internet and
+controlled by a variety of software written in
+various programming languages.</p>
+
+<p>On the other hand,
+human behaviors and human tasks are not usually
+described in programming languages, although
+human task descriptions are in many cases described
+in program-like languages.
+For example, cooking recipes are very similar
+to programming languages, since they describe
+what people should do for preparing foods.</p>
+
+<pre><code>boil(a pan of water)
+if(water is hot enough){
+   put pasta into boild water
+}
+</code></pre>
+
+<p>Job instructions can also be described in
+program-like texts.</p>
+
+<pre><code>while many people are waiting do
+  open all the レジ counters
+end
+</code></pre>
+
+<p>The structure of these instructions are
+similar to computer programming languages, but
+computer languages and instructions for humans have been
+used in very different environments, and they were
+not used together in the same environment.</p>
+
+<p>However, the two different language environments
+are getting closer, because "crowdsoursing" has been
+getting popular recently.
+Researchers are working on various reasearches where
+people can use human resources on the Web
+as easily as using software libraries in a system.
+For example,
+users of a word processor can easily use a croudsoursing
+menu to ask people on the net to rewrite phrases,
+just like
+running a spell checker on the word processor[Miller].
+In this case, there's little difference between
+calling a spell checking library and asking people on the
+Net to rewite sentences.</p>
+
+<p>These approaches are interesting because
+distinctions between
+computer resources and human resources are diminishing.
+However, there still exist big differences between
+computer functions and human functions, and
+these systems are not flexible enough.</p>
+
+<!-- 対等でない -->
+
+
+<p>A computer program can get a real-world sensing data on the net
+using a sensor library,
+but it cannot get similar data from people on the net,
+since the method of getting data from sensors and
+getting information from people are usually very different.
+Similarly,
+calling a software function and
+asking people to do something are quite different.
+If we can handle computer systems and people on the net
+exactly the same way,
+とても面白いことが起こると思われる。</p>
+
+<p>People might like to have a laundry-taking system which can
+execute a task like this:</p>
+
+<pre><code>if it's likely to rain then
+  take in the laundry
+end
+</code></pre>
+
+<p>We can use sensor devices or consult the Web to tell if
+"it's likely to rain",
+but we can also ask people if if it is likely to rain or not.
+Also, we can use a special robot to take in the laundry,
+while we can ask your family member to do the same thing.
+In this way,
+either a machine or a human can sense data or perform action
+in almost the same way.</p>
+
+<p>Even household chores can be described using
+program-like descriptions.
+If you have to prepare a Japanese dinnaer at 19:00,
+you may have to behave like this:</p>
+
+<ul>
+<li>wash rice at 18:00</li>
+<li>put the rice in a pot with proper amount of water</li>
+<li>wait for 30 minutes</li>
+<li>put the pot on the gas stove with high flame</li>
+<li>set the heat low after hearing the boiling sound</li>
+<li>turn of the gas after 10 minites</li>
+</ul>
+
+
+<p>Sensing the boiling sound is easy for humans, but simple sensors
+cannot detect it.
+Waiting for 10 minites is easy for computers, but that is
+not easy for humans.
+For a very simple task like preparing rice,
+collabolation between humans and computers is quite effective.</p>
+
+<!-- センシングは人間がやる -->
+
+
+<p>While the user is waiting for the rice to be cooked,
+he can do other tasks for the meal.
+Such activities can be described using a programming language
+which supports parallel processing.</p>
+
+<!--
+  しかしこれらはまだ限定的であり、できないことも多い
+   [[[ユーザと機械が対等でない]]]
+    ユーザからの 要求に応じて 機械が 動く
+    機械からの 要求に応じて 人間が 行動する
+   ある時刻にベルをならす(=機械を動)ことはできるが人間を起こす(=人間を行動)ことはできない
+   人間のセンサを条件にすることができない
+    すごく主観的なものをプログラミングに記述できない
+    if 綺麗な景色を見たら then とか
+  人間のセンシング行動やアクションも含めて完全に融合したプログラミング環境があれば面白い!
+  -->
+
+
+<p> [[[例]]]
+  [[[日常的な仕事の記述]]]
+   [[[条件やアクションが人間でも機械でも同等]]]
+   [[[if]]] 誰かいる [[[then]]] ドアを開ける
+   [[[if]]] 雨がふる [[[then]]] 洗濯をとりこむ
+   [[[if]]] 人が足りない [[[then]]] 応援を呼ぶ
+   [[[if]]] Amazonが来た [[[then]]] メールする
+   [[[if]]] ディスクが無い [[[then]]] 買う(Amazon/アキバ)
+   [[[if]]] ビールが無い [[[then]]] 買う
+   [[[if]]] 7時になる [[[then]]] 起きる
+   7時になったらベルがなるのではなく 7時になったら起きる
+   TODOリストとか目覚まし時計とかはプログラミングである
+  [[[7時の夕食の用意]]]
+   6時に米を洗う
+   水と一緒に土鍋に入れて30分放置する
+   火をつける
+   [[[沸騰したら]]]弱火にする
+   8分たったら火を止める
+   その間に別の料理を用意する
+   この場合、センサを人間がやってる (沸騰したら)
+    if文の中身が人間のセンサ
+   また並列プログラミングになってる
+  [[[既存のシステムではこういう仕事をスクリプトとして記述することはできない]]]
+  [[BABAScript]][[[だと楽勝]]]
+   だとイイネ
+ [[[方法 = プログラム上で人/コンピュータへの命令の区別をなくす]]]
+  コンピュータのプログラムと人のプログラムが融合
+   行動を人がやる場合と機械がやる場合 (action)
+   条件を機械が認識する場合と人が認識する場合 (センサ/条件)
+   どちらでも良い場合もある (e.g. 天気)
+    「雨がふってきたら」は人間が判断しても機械判断でもよい
+  人が得意なことや、人にしかできないことは人にやらせる
+   現実のものを動かす
+   人間だけが認識できるもの
+    CAPTCHAとか
+  コンピュータが得意なことはコンピュータにやらせる
+   普通の計算とか
+   モータを回すとか
+  世の中のあらゆる手順や行動をプログラムとして記述する
+  人間を機械と同じように記述できる</p>
+
+<p>  綺麗な景色だと写真をとる
+   みたいなことは人間にしかできない</p>
+</body>
+</html>
