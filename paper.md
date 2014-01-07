@@ -1,8 +1,8 @@
-# AH2014 Paper
+# Using BabaScript for Integrating Computer and Human Activities
 
 ## Abstract
 
-We introduce the "BabaScript" programming system which supports
+We introduce the "BabaScript" programming system that supports
 the integration of human and computer activities.
 Although many recent programming systems support croudsourcing features
 where computer programs can utilize human resources,
